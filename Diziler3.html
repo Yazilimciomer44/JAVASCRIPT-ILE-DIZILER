@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("== Dizide eleman syası == <br>");
+        const cicekler=["lale","gül","menekşe","papatya","karanfil"];
+        document.write("Tüm elemanlar: "+cicekler+"<br>");
+
+        /* IndexOf Metodu ile dizideki bir elemanın sırasını öğreniyoruz */
+        let pozisyon1=cicekler.indexOf("gül")+1;
+        let pozisyon2=cicekler.indexOf("menekşe")+1;
+
+        document.write("Gülün pozisyonu :"+pozisyon1+"<br>");
+        document.write("Menekşenin pozisyonu :"+pozisyon2+"<br>");
+
+        /*LastIndexOf metodu ile aranan bir elemanın en son görüldüğü sıra numarası elde edilir */
+        cicekler.push("gül");
+        document.write("Tüm elemanlar :"+cicekler+"<br>");
+        let sonPozisyon=cicekler.lastIndexOf("gül")+1;
+        document.write("Gülün son pozisyonu :"+sonPozisyon+"<br>");
+
+        /*include metodu ile bir elemanın dizide olup olmadığını kontrol ediyoruz,
+        eleman varsa TRUE,yoksa FALSE dönüyor */
+
+        let sonuc=cicekler.includes("menekşe");
+        document.write("Sonuç :"+sonuc+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
